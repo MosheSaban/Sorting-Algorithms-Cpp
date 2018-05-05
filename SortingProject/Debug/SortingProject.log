@@ -1,0 +1,4 @@
+﻿  QuickSort.cpp
+c:\sortp\sortingproject\quicksort.cpp(51): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  SortingProject.vcxproj -> C:\SortP\Debug\SortingProject.exe
+  SortingProject.vcxproj -> C:\SortP\Debug\SortingProject.pdb (Partial PDB)
