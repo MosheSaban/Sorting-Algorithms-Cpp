@@ -1,3 +1,4 @@
+/* Author Moshe Saban */
 #include<iostream>
 #include<stdlib.h>
 #include<time.h>
@@ -7,7 +8,6 @@ using namespace std;
 /* A utility function to swap two elements	*/
 void swap(int* a, int* b) {
 	int t = *a;
-
 	*a = *b;
 	*b = t;
 }
