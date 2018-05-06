@@ -1,16 +1,5 @@
 /* Author Moshe Saban */
-#include<iostream>
-#include<stdlib.h>
-#include<time.h>
-
-using namespace std;
-
-/* A utility function to swap two elements	*/
-void swap(int* a, int* b) {
-	int t = *a;
-	*a = *b;
-	*b = t;
-}
+#include "Header.h"
 
 /* The main function that implements QuickSort in random version
 arr[]	is Array to be sorted,
@@ -38,24 +27,3 @@ void qS(int arr[], int left, int right) {
 		qS(arr, pivot + 1, right);
 	}	// end if
 }	// end qS function
-
-void printArray(int arr[], int size) {
-	for (int i = 0; i < size; i++)
-		cout << arr[i] << " ";
-}
-
-void main() {
-	int arr[20];
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	srand(time(NULL));
-	for (int i = 0; i < n; i++)
-		arr[i] = rand() % 1000;
-
-	cout << "The array before sorting: \n";
-	printArray(arr, n);
-	qS(arr, 0, n - 1);
-	cout << "\nThe array after sorting: \n";
-	printArray(arr, n);
-	cin >> n;
-}
